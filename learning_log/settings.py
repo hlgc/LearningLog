@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# 我的设置
+LOGIN_URL = '/users/login/'
+
 
 # Application definition
 
@@ -40,6 +43,7 @@ INSTALLED_APPS = [
 
     # 我的应用程序
     'learning_logs',
+    'users',
 ]
 
 MIDDLEWARE = [
