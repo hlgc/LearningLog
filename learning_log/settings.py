@@ -30,9 +30,12 @@ ALLOWED_HOSTS = []
 # 我的设置
 LOGIN_URL = '/users/login/'
 
+# django-bootstrap3设置
+BOOTSTRAP3 = {
+    'include_jquery': True,
+}
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -44,6 +47,9 @@ INSTALLED_APPS = [
     # 我的应用程序
     'learning_logs',
     'users',
+
+    # 第三方应用
+    'bootstrap3'
 ]
 
 MIDDLEWARE = [
